@@ -29,7 +29,10 @@ const gameFlow = (() => {
 
     // Resets board so players can play again
     const reset = () => {
-
+        for( let i = 0; i < square.length; i++){
+            let span = document.querySelector("span");
+            span.remove();
+        }
     }
 
     // Checks every square to see if a player has won
@@ -65,26 +68,58 @@ const gameFlow = (() => {
                 alert("O Wins!");
             };
 
-            
+
             if(square[0].textContent.includes("X") && 
             square[1].textContent.includes("X") &&
             square[2].textContent.includes("X")){
                 alert("X Wins!");
             };
+            if(square[0].textContent.includes("O") && 
+            square[1].textContent.includes("O") &&
+            square[2].textContent.includes("O")){
+                alert("O Wins!");
+            };
+            if(square[3].textContent.includes("X") && 
+            square[4].textContent.includes("X") &&
+            square[5].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[3].textContent.includes("O") && 
+            square[4].textContent.includes("O") &&
+            square[5].textContent.includes("O")){
+                alert("O Wins!");
+            };
+            if(square[6].textContent.includes("X") && 
+            square[7].textContent.includes("X") &&
+            square[8].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[6].textContent.includes("O") && 
+            square[7].textContent.includes("O") &&
+            square[8].textContent.includes("O")){
+                alert("O Wins!");
+            };
+
+
             if(square[0].textContent.includes("X") && 
-            square[3].textContent.includes("X") &&
+            square[4].textContent.includes("X") &&
+            square[8].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[0].textContent.includes("O") && 
+            square[4].textContent.includes("O") &&
+            square[8].textContent.includes("O")){
+                alert("O Wins!");
+            };
+            if(square[2].textContent.includes("X") && 
+            square[4].textContent.includes("X") &&
             square[6].textContent.includes("X")){
                 alert("X Wins!");
             };
-            if(square[0].textContent.includes("X") && 
-            square[3].textContent.includes("X") &&
-            square[6].textContent.includes("X")){
-                alert("X Wins!");
-            };
-            if(square[0].textContent.includes("X") && 
-            square[3].textContent.includes("X") &&
-            square[6].textContent.includes("X")){
-                alert("X Wins!");
+            if(square[2].textContent.includes("O") && 
+            square[4].textContent.includes("O") &&
+            square[6].textContent.includes("O")){
+                alert("O Wins!");
             };
     };
 
