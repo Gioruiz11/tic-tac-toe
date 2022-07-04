@@ -34,11 +34,58 @@ const gameFlow = (() => {
 
     // Checks every square to see if a player has won
     const checkWin = () => {
-        for( let i = 0; i < square.length; i++){
-            if(square[0].textContent.includes("X")){
+            if(square[0].textContent.includes("X") && 
+            square[3].textContent.includes("X") &&
+            square[6].textContent.includes("X")){
                 alert("X Wins!");
             };
-    };
+            if(square[0].textContent.includes("O") && 
+            square[3].textContent.includes("O") &&
+            square[6].textContent.includes("O")){
+                alert("O Wins!");
+            };
+            if(square[1].textContent.includes("X") && 
+            square[4].textContent.includes("X") &&
+            square[7].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[1].textContent.includes("O") && 
+            square[4].textContent.includes("O") &&
+            square[7].textContent.includes("O")){
+                alert("O Wins!");
+            };
+            if(square[2].textContent.includes("X") && 
+            square[5].textContent.includes("X") &&
+            square[8].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[2].textContent.includes("O") && 
+            square[5].textContent.includes("O") &&
+            square[8].textContent.includes("O")){
+                alert("O Wins!");
+            };
+
+            
+            if(square[0].textContent.includes("X") && 
+            square[1].textContent.includes("X") &&
+            square[2].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[0].textContent.includes("X") && 
+            square[3].textContent.includes("X") &&
+            square[6].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[0].textContent.includes("X") && 
+            square[3].textContent.includes("X") &&
+            square[6].textContent.includes("X")){
+                alert("X Wins!");
+            };
+            if(square[0].textContent.includes("X") && 
+            square[3].textContent.includes("X") &&
+            square[6].textContent.includes("X")){
+                alert("X Wins!");
+            };
     };
 
     // Sets up the board so X's and O's can be placed
@@ -66,10 +113,3 @@ const gameFlow = (() => {
 })();
 
 gameFlow.setupGame();
-
-// algorithm: 
-// construct new spans with constructor
-// then alternate while loop between X and O
-// check if win or tie by iterating through
-
-
